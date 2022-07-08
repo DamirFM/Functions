@@ -3,7 +3,7 @@
 // If no arguments are passed to the function, then it should return null.
 
 export default function average (...numbers) {
-    const getSumOfNumbers = _.sum(numbers);  // _.sum - the sum function from the lodash library.
+    const getSumOfNumbers = numbers.reduce((acc, number) => acc + number, 0);
     console.log(getSumOfNumbers);
     const length = numbers.length;
       if (numbers.length === 0) {
