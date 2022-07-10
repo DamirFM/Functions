@@ -5,4 +5,4 @@
 // the second is the month, and the third is the number.
 //  The input function must take any number of parameters. 
 // If nothing was passed to the function, it should return an empty array. 
-// Export the default function.
+// Export the default function
