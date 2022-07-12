@@ -7,24 +7,19 @@
 // If nothing was passed to the function, it should return an empty array. 
 // Export the default function
 
-export default function convert (...dates) {
+export default function convert(...dates) {
     //console.log(dates);
     if (dates.length === 0) {
       return [];
     }
     let result = [];
     for (let data of dates) {
-      result.push(new Date(data));
-      console.log(result)
-    return result;
-      
+    const item = new Date (...data);
+    const converted = item.toDateString();
+    result.push(converted);
+  
     }
   
-  
-    
-  
-  
-  
-  
+    return result;
   
   }
