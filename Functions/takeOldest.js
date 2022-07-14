@@ -9,14 +9,8 @@ const users = [
   ];
 
 
-users.sort((a, b) => {
-    if (a.birthday === b.birthday) {
-      return 0;
-    }
-  
-    return a.birthday > b.birthday ? 1 : -1;
-  });
-  
-  
-  
-  console.log(users);
+  export default function takeOldest (users, num = 1) {
+    const date = (users) => Date.parse(users.birthday)
+    const sorted = _.sortBy(users, date);
+    console.log(sorted)
+  }
