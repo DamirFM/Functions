@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 //the takeOldest() function, which takes a list of users as input and returns the oldest ones. 
 // The number of returned users is set by the second parameter, which is equal to one by default. 
 // Export this function by default.
