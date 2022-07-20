@@ -15,6 +15,7 @@ const users = [
 
   export default function takeOldest (users, num = 1) {
     const date = (users) => Date.parse(users.birthday)
+    // eslint-disable-next-line no-undef
     const sorted = _.sortBy(users, date);
     return sorted.slice(0, num);
   }
