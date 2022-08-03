@@ -41,10 +41,18 @@ console.log(getJedi(users));
 const getNames = (users) => {
     return users.reduce((arr, item) => {
         if (item.jedi) {
-            arr.push(item[username])
+            arr.push(item.username)
         }
         return arr;
     } , [])
 }
 
 console.log(getNames(users))
+
+const getSum = (numbers) => {
+    return numbers.reduce((acc, number) => {
+        return acc + number;
+    }, 0)
+}
+
+console.log(getSum(numbers));
