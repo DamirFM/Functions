@@ -56,3 +56,19 @@ const getSum = (numbers) => {
 }
 
 console.log(getSum(numbers));
+
+
+const bankAccounts = [
+    { id: "123", amount: 19 },
+    { id: "345", amount: 33 },
+    { id: "567", amount: 4 },
+    { id: "789", amount: 20 },
+  ]
+
+  const sumAmount = (bankAccounts) => {
+      return bankAccounts.reduce((acc, item) => {
+          return acc + item.amount;
+      }, 0);
+  };
+
+  console.log(sumAmount(bankAccounts));
