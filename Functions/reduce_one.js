@@ -1,3 +1,5 @@
+// number 1
+
 const numbers = [2, 3, 11, 15, 20, 3, 5, 8, 10, 16, 2, 11, 14, 15, 18];
 
 const average = (numbers) => {
@@ -7,6 +9,8 @@ const average = (numbers) => {
 };
 
 console.log(average(numbers));
+
+// number 2
 
 const users = [{
     username: "lando12",
@@ -38,6 +42,8 @@ const getJedi = (users) =>{
 }
 console.log(getJedi(users));
 
+//// number 3
+
 const getNames = (users) => {
     return users.reduce((arr, item) => {
         if (item.jedi) {
@@ -49,6 +55,8 @@ const getNames = (users) => {
 
 console.log(getNames(users))
 
+// // number 4
+
 const getSum = (numbers) => {
     return numbers.reduce((acc, number) => {
         return acc + number;
@@ -57,6 +65,7 @@ const getSum = (numbers) => {
 
 console.log(getSum(numbers));
 
+// // number 5
 
 const bankAccounts = [
     { id: "123", amount: 19 },
