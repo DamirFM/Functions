@@ -32,5 +32,6 @@ export default function (emails) {
         acc[domain] += 1;
         return acc;
     }, {})
+    
     return reducedEmails;
 }
