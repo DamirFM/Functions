@@ -19,7 +19,5 @@ export default function convert(...dates) {
     result.push(converted);
   
     }
-  
     return result;
-  
   }
