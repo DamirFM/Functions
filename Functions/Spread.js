@@ -17,7 +17,6 @@ export default function convert(...dates) {
     const item = new Date (...data);
     const converted = item.toDateString();
     result.push(converted);
-  
     }
     return result;
   }
