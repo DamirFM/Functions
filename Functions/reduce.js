@@ -3,7 +3,6 @@
 // It should return an object where the key is the value for the given property and the value is 
 // an array with data appropriate for the group.
 
-
 export default function groupBy (students, properties) {
   const result = students.reduce((acc, student) => {
     if (!Object.hasOwn(acc, student[properties])) {
