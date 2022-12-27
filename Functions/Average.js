@@ -2,6 +2,7 @@
 // the arithmetic mean of all passed arguments. 
 // If no arguments are passed to the function, then it should return null.
 
+
 export default function average (...numbers) {
     const getSumOfNumbers = numbers.reduce((acc, number) => acc + number, 0);
     console.log(getSumOfNumbers);
