@@ -22,6 +22,7 @@ const emails = [
     'yahoo.com',
   ];
 
+  
 export default function (emails) {
     const mappedEmails = emails.map((email) => email.split('@')[1]);
     const filtredEmails = mappedEmails.filter((domain) => freeEmailDomains.includes(domain));
