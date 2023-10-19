@@ -45,3 +45,9 @@ select1.addEventListener("change", () =>
     ? update("black", "white")  // if true
     : update("white", "black"), // if false
 );
+
+function favoriteAnimal(animal) {
+  return animal + " is my favorite animal!"
+}
+
+console.log(favoriteAnimal(NaN))
