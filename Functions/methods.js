@@ -183,3 +183,51 @@ ask(
   () => alert("You canceled the execution.")
 );
  
+//_______________________________________________________________________________________
+// Write a function called capitalize that takes a string and returns 
+// that string with only the first letter capitalized. 
+// Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+let str = 'dfDFGBDSEVDSvdf'
+function capitalize(str) {
+  
+  let result = '';
+  for (let i = 1;i < str.length; i++ ) {
+    result = result + str[i];
+    console.log(str[i])
+  }
+  
+  return str[0].toUpperCase() + result.toLowerCase();
+}
+alert(capitalize(str))
+
+// Write a function called lastLetter that takes a string 
+// and returns the very last letter of that string:
+let sum = (str) => str[str.length - 1 ];
+
+alert( sum("abcd") ); 
+//_______________________________________________________________________________________
+// The desired output is a list of numbers from 1 to the number the user entered.
+// But each number that is divisible by 3 will output Fizz, each number that is divisible 
+// by 5 will output Buzz and each number that is divisible by both 3 and 5 will output FizzBuzz.
+
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+function FizzBuzz(answer) {
+  
+  let result = 1;
+  for (let i = 1;i < answer; i++ ) {
+    result = result + 1;
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+  return result
+}
+console.log((FizzBuzz(answer)))
