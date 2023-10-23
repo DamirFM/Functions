@@ -231,3 +231,19 @@ function FizzBuzz(answer) {
   return result
 }
 console.log((FizzBuzz(answer)))
+_______________________________________________________________________________________
+
+const select1 = document.querySelector("select");
+const html = document.querySelector("html");
+document.body.style.padding = "10px";
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+select1.addEventListener("change", () =>
+  select1.value === "black"
+    ? update("black", "white")  // if true
+    : update("white", "black"), // if false
+);
