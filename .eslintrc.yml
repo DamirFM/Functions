@@ -1,13 +1,14 @@
 env:
-  browser: true
   es2021: true
+  node: true
+
 extends:
-  - eslint:recommended
+  - airbnb-base
+
 parserOptions:
-  ecmaFeatures:
-    jsx: true
-  ecmaVersion: latest
+  ecmaVersion: 13
   sourceType: module
+  
 rules:
   no-console: 0
   import/extensions: 0
