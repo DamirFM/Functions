@@ -30,12 +30,12 @@ function ask(question, yes, no) {
   ask("Do you agree?", showOk, showCancel);
 
 //We can use Function Expressions to write an equivalent, shorter function:
-function ask3(question, yes, no) {
+function ask1(question, yes, no) {
     if (confirm(question)) yes()
     else no();
   }
   
-  ask3(
+  ask1(
     "Do you agree?",
     function() { alert("You agreed."); },
     function() { alert("You canceled the execution."); }
@@ -58,13 +58,18 @@ function checkAge(age) {
     return confirm('Did parents allow you?');
   }
 }
-function checkAge(age) {
+checkAge();
+
+let checkAge1 = (age) => {
   return (age > 18) ? true : confirm('Did parents allow you?');
 }
-function checkAge(age) {
+checkAge1()
+
+let checkAge2 = (age) => {
   (age > 18) 
   return ( (age > 18)  || confirm('Did parents allow you?'));
 }
+checkAge2()
 //_______________________________________________________________________________________
 
 // The correct approach would be to use a Function Expression 
@@ -87,13 +92,13 @@ if (age < 18) {
 welcome();
 
 // Or we could simplify it even further using a question mark operator ?:
-let age1 = prompt("What is your age?", 18);
+let age3 = prompt("What is your age?", 18);
 
-let welcome1 = (age < 18) ?
+let welcome1 = (age3 < 18) ?
   function() { alert("Hello!"); } :
   function() { alert("Greetings!"); };
 
-welcome(); // ok now
+welcome1(); // ok now
 //_______________________________________________________________________________________
 
 // Arrow functions, the basics
@@ -101,11 +106,12 @@ welcome(); // ok now
 // evaluated and returned the right-side expression with them.
 // It’s called “arrow functions”, because it looks like this:
 
-let func = (arg1, arg2, ..., argN) => expression;
+// let func = (arg1, arg2, argN) => expression;
 
 // Let’s see a concrete example:
 
  let sum = (a, b) => a + b;
+ sum();
 
 // his arrow function is a shorter form of:
 
@@ -113,7 +119,7 @@ let sum1 = function(a, b) {
   return a + b;
 };
 
-alert( sum(1, 2) ); // 3
+alert( sum1(1, 2) ); // 3
 
 //  If we have only one argument, then parentheses around parameters 
 //  can be omitted, making that even shorter.
@@ -130,11 +136,11 @@ alert( sum(1, 2) ); // 3
 
  let age2 = prompt("What is your age?", 18);
 
- let welcome2 = (age < 18) ?
+ let welcome2 = (age2 < 18) ?
   () => alert('Hello!') :
   () => alert("Greetings!");
 
- welcome();
+ welcome2();
 
 //  Multiline arrow functions
 // The arrow functions that we’ve seen so far were very simple.
@@ -159,12 +165,12 @@ alert( sum2(1, 2) ); // 3
 
 // Replace Function Expressions with arrow functions in the code below:
 
- function ask(question, yes, no) {
+ function ask3(question, yes, no) {
   if (confirm(question)) yes();
   else no();
 }
 
-ask(
+ask3(
   "Do you agree?",
   function() { alert("You agreed."); },
   function() { alert("You canceled the execution."); }
@@ -172,12 +178,12 @@ ask(
 
 // solution
 
- function ask(question, yes, no) {
+ function ask4(question, yes, no) {
   if (confirm(question)) yes();
   else no();
 }
 
-ask(
+ask4(
   "Do you agree?",
   () => alert("You agreed."),
   () => alert("You canceled the execution.")
@@ -231,7 +237,7 @@ function FizzBuzz(answer) {
   return result
 }
 console.log((FizzBuzz(answer)))
-_______________________________________________________________________________________
+//_______________________________________________________________________________________
 
 const select1 = document.querySelector("select");
 const html = document.querySelector("html");
