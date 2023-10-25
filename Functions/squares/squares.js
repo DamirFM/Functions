@@ -9,14 +9,12 @@
 // squareSumOfSquares(1, 1); // 4
 // squareSumOfSquares(2, 3); // 169
 
-
 // The square() function can be used inside sumOfSquares()
 // The sumOfSquares() function can be used inside squareSumOfSquares()
 
-
-let square = (num) => num * num;
-let sumOfSquares = (num1, num2) => square(num1) + square(num2);
-let squareSumOfSquares = (num1, num2) => square(sumOfSquares(num1, num2))
+const square = (num) => num * num;
+const sumOfSquares = (num1, num2) => square(num1) + square(num2);
+const squareSumOfSquares = (num1, num2) => square(sumOfSquares(num1, num2));
 
 export {
   square,

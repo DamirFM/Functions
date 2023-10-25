@@ -1,16 +1,16 @@
 const flatten = (list) => list.reduce((acc, element) => {
-    const result = (Array.isArray(element) ? [...acc, ...flatten(element)] : [...acc, element]);
-    return result;
-  }, []);
-  
-  export default flatten;
-//Реализуйте и экспортируйте по умолчанию функцию, которая делает плоским вложенный массив.
+  const result = (Array.isArray(element) ? [...acc, ...flatten(element)] : [...acc, element]);
+  return result;
+}, []);
 
-//Для решения задачи нельзя использовать готовые методы для выравнивания массивов.
+export default flatten;
+// Реализуйте и экспортируйте по умолчанию функцию, которая делает плоским вложенный массив.
 
-//Примеры
-//const list = [1, 2, [3, 5], [[4, 3], 2]];
+// Для решения задачи нельзя использовать готовые методы для выравнивания массивов.
 
-//flatten(list); // [1, 2, 3, 5, 4, 3, 2]
-//Подсказки
-//Array.isArray - проверяет, является ли элемент массивом.
+// Примеры
+// const list = [1, 2, [3, 5], [[4, 3], 2]];
+
+// flatten(list); // [1, 2, 3, 5, 4, 3, 2]
+// Подсказки
+// Array.isArray - проверяет, является ли элемент массивом.
