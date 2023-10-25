@@ -23,7 +23,7 @@ const emails = [
   ];
 
   
-export default function (emails) {
+export default function () {
     const mappedEmails = emails.map((email) => email.split('@')[1]);
     const filtredEmails = mappedEmails.filter((domain) => freeEmailDomains.includes(domain));
     const reducedEmails = filtredEmails.reduce((acc, domain) => {
