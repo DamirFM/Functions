@@ -30,12 +30,12 @@ function ask(question, yes, no) {
   ask("Do you agree?", showOk, showCancel);
 
 //We can use Function Expressions to write an equivalent, shorter function:
-function ask(question, yes, no) {
+function ask3(question, yes, no) {
     if (confirm(question)) yes()
     else no();
   }
   
-  ask(
+  ask3(
     "Do you agree?",
     function() { alert("You agreed."); },
     function() { alert("You canceled the execution."); }
@@ -87,9 +87,9 @@ if (age < 18) {
 welcome();
 
 // Or we could simplify it even further using a question mark operator ?:
-let age = prompt("What is your age?", 18);
+let age1 = prompt("What is your age?", 18);
 
-let welcome = (age < 18) ?
+let welcome1 = (age < 18) ?
   function() { alert("Hello!"); } :
   function() { alert("Greetings!"); };
 
@@ -109,7 +109,7 @@ let func = (arg1, arg2, ..., argN) => expression;
 
 // his arrow function is a shorter form of:
 
-let sum = function(a, b) {
+let sum1 = function(a, b) {
   return a + b;
 };
 
@@ -128,9 +128,9 @@ alert( sum(1, 2) ); // 3
 //  Arrow functions can be used in the same way as Function Expressions.
 //  For instance, to dynamically create a function:
 
- let age = prompt("What is your age?", 18);
+ let age2 = prompt("What is your age?", 18);
 
- let welcome = (age < 18) ?
+ let welcome2 = (age < 18) ?
   () => alert('Hello!') :
   () => alert("Greetings!");
 
@@ -149,12 +149,12 @@ alert( sum(1, 2) ); // 3
 
 // Like this:
 
- let sum = (a, b) => {  // the curly brace opens a multiline function
+ let sum2 = (a, b) => {  // the curly brace opens a multiline function
   let result = a + b;
   return result; // if we use curly braces, then we need an explicit "return"
 };
 
-alert( sum(1, 2) ); // 3
+alert( sum2(1, 2) ); // 3
 //_______________________________________________________________________________________
 
 // Replace Function Expressions with arrow functions in the code below:
@@ -203,9 +203,9 @@ alert(capitalize(str))
 
 // Write a function called lastLetter that takes a string 
 // and returns the very last letter of that string:
-let sum = (str) => str[str.length - 1 ];
+let sum3 = (str) => str[str.length - 1 ];
 
-alert( sum("abcd") ); 
+alert( sum3("abcd") ); 
 //_______________________________________________________________________________________
 // The desired output is a list of numbers from 1 to the number the user entered.
 // But each number that is divisible by 3 will output Fizz, each number that is divisible 

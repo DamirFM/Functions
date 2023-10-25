@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import smallestDivisor from '../solution.js';
 
 test('solution', () => {

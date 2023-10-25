@@ -1,4 +1,5 @@
-import isPrime from '../isPrime.js';
+/* eslint-disable no-undef */
+import {isPrime} from '../isPrime.js';
 
 test('not prime', () => {
   expect(isPrime(-3)).toBe(false);
