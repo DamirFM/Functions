@@ -1,1 +1,4 @@
-export const getTrianglePerimeter = (a, b, c) => a + b + c;
+let getTriangleArea = (h, b) => 1 / 2 * h * b;
+getTriangleArea();
+
+export default getTriangleArea;
