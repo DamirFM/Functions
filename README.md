@@ -5,4 +5,3 @@ In this course, I learn how to write functions so that the code is predictable a
 
 [![Lint](https://github.com/DamirFM/Functions/workflows/make-lint/badge.svg)](https://github.com/DamirFM/Functions/actions)
 
-### Maintainability Badge:
