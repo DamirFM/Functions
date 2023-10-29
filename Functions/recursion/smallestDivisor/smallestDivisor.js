@@ -24,7 +24,7 @@ const smallestDivisor = (num) => {
 
     return iter(counter, acc + 1);
   };
-  // we shoul call our iter func after definition of a function
+  // we should call our iter func after definition of a function
   // we will call it with the num, because we looking for the num
   // and two because we should start divide frome two
   return iter(num, 2);
